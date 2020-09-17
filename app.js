@@ -5,16 +5,9 @@ const addTodoInput = document.querySelector(".todo-form__input");
 const todos = [];
 
 class Todo {
-  //  classa - foremka do tworzenia obiektow. Na pdostawie klasy moge tworzyc obiekty
-  // konstruktor słuzy do wywolywania metod z klasy
-
-  // w klasie sa metody. w naszym przypadku metoda construktor, ktora przyjmuje jakies parametry
-  // załozenie jest takie -  Dodawaj funkcje do prototypu a wlasciwosci pisz w construktorze
   constructor(todoName) {
     this.createTodo(todoName);
   }
-
-  //   to jest funkcja
 
   createTodo(todoName) {
     const todoWrapper = document.createElement("div");
@@ -73,15 +66,5 @@ const addTodo = () => {
     addTodoInput.value = "";
   }
 };
-
-// const tasks = ["zakupy", "sprzatanie", "wyjsc z psem"];
-
-// const indexOfElement = tasks.indexOf("sprzatanie");
-
-// console.log(indexOfElement);
-
-// tasks[indexOfElement] = "pranie";
-
-// console.log(tasks);
 
 addTodoBtn.addEventListener("click", addTodo);
